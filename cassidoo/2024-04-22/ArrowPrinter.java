@@ -1,20 +1,23 @@
+import java.util.Scanner;
+
 /**
  * ArrowPrinter is a class that prints an arrow made of asterisks, 
  * with desired size and direction.
+ * 
+ * Compile: `javac ArrowPrinter.java`
+ * Execute: `java ArrowPrinter`
  * 
  * @author Ricardo Machado Poffo
  */
 public class ArrowPrinter {
     public static void main(String[] args) {
-        int size = 3;
-        System.out.println("-- UP --");
-        printTheArrow("up", size);
-        System.out.println("-- DOWN --");
-        printTheArrow("down", size);
-        System.out.println("-- RIGHT --");
-        printTheArrow("right", size);
-        System.out.println("-- LEFT --");
-        printTheArrow("left", size);
+        System.out.println("What's the size of the arrow?");
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        System.out.println("Which direction to point? (up, down, left, right)");
+        String direction = scanner.next();
+        printTheArrow(direction, size);
+        scanner.close();
     }
 
     public static void printTheArrow(String direction, int size) {
