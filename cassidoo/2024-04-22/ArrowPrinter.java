@@ -1,37 +1,7 @@
-/**
- * Interview question of the week
-Last week, I had you find specific substrings. There were some tricky answers! Great job Gu, Jeroen, Amine, John, The Math Jester, Mazen, Saad, Nathael, Ryan, Kyle, Ten, and Pozorvlak!
-
-This week's question:
-Given a direction and a number, write a function that outputs an arrow of asterisks with the height of that number! See the pattern below.
-
-Example:
-
-$ printArrow('right', 3)
-*
- *
-  *
- *
-*
-
-$ printArrow('left', 5)
-    *
-   *
-  *
- *
-*
- *
-  *
-   *
-    *
-
-$ printArrow('up', 2)
-  *
- * *
-  
-  
+/*
+ * ArrowPrinter is a class that handles an output arrow made of asterisks, 
+ * pointing the desired direction.
  */
-
 public class ArrowPrinter {
     public static void main(String[] args) {
         System.out.println("-- UP --");
